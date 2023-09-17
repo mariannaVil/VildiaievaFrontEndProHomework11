@@ -6,6 +6,55 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        let a = "";
+        for (let i=20; i<=30;i=i+0.5) {
+            a = a + i + " "
+        }
+        alert (a);
+
+        
+        let x = "";
+        let i = 0;
+        while (i<=100) {
+            i = i + 10;
+            x = x + (27 * i) + " ";
+        }
+        alert (x);
+
+
+        let c = "";
+        let N = 1000;
+        for (let i = 1; i <= 100; i++) {
+            s = i * i;
+            if (s<=N) {
+                c = c + i +" "
+            }
+        }
+        alert(c);
+
+
+        let f = "";
+        let p = 7;
+        for (let i = 1; i<= p; i++) {
+            if (p % i === 0) {
+                f = f + i + ',';
+            }
+        }
+        let isPrime = f === '1,' + p + ',';
+        alert(isPrime);
+
+
+        let res = ""; 
+        let g = 8;
+        let isPossible = false;
+        for (let i = 1; i<=10; i++) {
+            if (g == i ** 3) {
+                isPossible = true;
+                res = res + i + "," + isPossible;
+            }
+        } 
+        alert(res);
+    </script>
 </body>
 </html>
